@@ -1,0 +1,7 @@
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\Application.exe
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\appsettings.Development.json
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\appsettings.json
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\Application.dll
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\Application.deps.json
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\Application.runtimeconfig.json
+C:\Users\baras\OneDrive\Рабочий стол\Test\Web\publish\Application.pdb

@@ -1,0 +1,40 @@
+﻿@page
+@model ExampleModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Example Calculator";
+}
+<div class="text-center">
+
+<h1>Example Calculator</h1>
+
+<form method="post">
+    <div>
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1" name="Number1" step="any" required />
+    </div>
+    <div>
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" name="Number2" step="any" required />
+    </div>
+    <div>
+        <label for="operation">Operation:</label>
+        <select id="operation" name="Operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+    </div>
+    <button type="submit">Calculate</button>
+</form>
+
+@if (Model.Result.HasValue)
+{
+    <div>
+        <h2>Result:</h2>
+        <p>@Model.Result</p>
+    </div>
+}
+</div>
