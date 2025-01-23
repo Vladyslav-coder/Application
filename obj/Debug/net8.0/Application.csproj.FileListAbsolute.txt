@@ -58,3 +58,4 @@ C:\Users\baras\OneDrive\Рабочий стол\Test\src\Application\obj\Debug\n
 C:\Users\baras\OneDrive\Рабочий стол\Test\src\Application\obj\Debug\net8.0\scopedcss\projectbundle\Application.bundle.scp.css
 C:\Users\baras\OneDrive\Рабочий стол\Test\src\Application\obj\Debug\net8.0\Application.genruntimeconfig.cache
 C:\Users\baras\OneDrive\Рабочий стол\Test\src\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\baras\OneDrive\Рабочий стол\Test\src\Application\obj\Debug\net8.0\Application.sourcelink.json

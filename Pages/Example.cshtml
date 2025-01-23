@@ -5,36 +5,41 @@
 @{
     ViewData["Title"] = "Example Calculator";
 }
-<div class="text-center">
 
-<h1>Example Calculator</h1>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="text-center mb-4">
+                <h1 class="display-4">Example Calculator</h1>
+            </div>
+            <form method="post" class="p-4 border rounded shadow-sm bg-light">
+                <div class="mb-3">
+                    <label for="number1" class="form-label">Number 1:</label>
+                    <input type="number" id="number1" name="Number1" class="form-control" step="any" required />
+                </div>
+                <div class="mb-3">
+                    <label for="number2" class="form-label">Number 2:</label>
+                    <input type="number" id="number2" name="Number2" class="form-control" step="any" required />
+                </div>
+                <div class="mb-3">
+                    <label for="operation" class="form-label">Operation:</label>
+                    <select id="operation" name="Operation" class="form-select">
+                        <option value="add">Add</option>
+                        <option value="subtract">Subtract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Calculate</button>
+            </form>
 
-<form method="post">
-    <div>
-        <label for="number1">Number 1:</label>
-        <input type="number" id="number1" name="Number1" step="any" required />
+            @if (Model.Result.HasValue)
+            {
+                <div class="mt-4 p-3 border rounded bg-success text-white text-center">
+                    <h2>Result:</h2>
+                    <p class="fs-4">@Model.Result</p>
+                </div>
+            }
+        </div>
     </div>
-    <div>
-        <label for="number2">Number 2:</label>
-        <input type="number" id="number2" name="Number2" step="any" required />
-    </div>
-    <div>
-        <label for="operation">Operation:</label>
-        <select id="operation" name="Operation">
-            <option value="add">Add</option>
-            <option value="subtract">Subtract</option>
-            <option value="multiply">Multiply</option>
-            <option value="divide">Divide</option>
-        </select>
-    </div>
-    <button type="submit">Calculate</button>
-</form>
-
-@if (Model.Result.HasValue)
-{
-    <div>
-        <h2>Result:</h2>
-        <p>@Model.Result</p>
-    </div>
-}
 </div>
